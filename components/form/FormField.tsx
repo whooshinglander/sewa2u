@@ -11,6 +11,10 @@ type Props = {
   placeholder?: string
   children?: ReactNode
   hint?: string
+  autoComplete?: string
+  spellCheck?: boolean
+  inputMode?: 'none' | 'text' | 'decimal' | 'numeric' | 'tel' | 'search' | 'email' | 'url'
+  onBlur?: () => void
 }
 
 export default function FormField({
@@ -24,12 +28,17 @@ export default function FormField({
   placeholder,
   children,
   hint,
+  autoComplete,
+  spellCheck,
+  inputMode,
+  onBlur,
 }: Props) {
   return (
-    <div className="flex flex-col gap-1">
-      <label htmlFor={name} className="text-sm font-medium text-slate-700">
+    <div className="flex flex-col gap-1.5">
+      <label htmlFor={name} className="text-sm font-medium text-navy-700">
         {label}
-        {required && <span className="text-red-500 ml-0.5">*</span>}
+        {required && <span className="text-red-500 ml-0.5" aria-hidden="true">*</span>}
+        {required && <span className="sr-only"> (required)</span>}
       </label>
       {children ? (
         children
@@ -41,13 +50,18 @@ export default function FormField({
           value={value}
           onChange={(e) => onChange(e.target.value)}
           placeholder={placeholder}
-          className={`w-full px-3 py-2.5 rounded-lg border text-sm transition-colors
-            ${error ? 'border-red-400 focus:ring-red-300' : 'border-slate-300 focus:border-blue-400 focus:ring-blue-100'}
-            focus:outline-none focus:ring-2 bg-white`}
+          autoComplete={autoComplete ?? 'off'}
+          spellCheck={spellCheck}
+          inputMode={inputMode}
+          onBlur={onBlur}
+          aria-required={required}
+          aria-invalid={error ? true : undefined}
+          aria-describedby={error ? `${name}-error` : hint ? `${name}-hint` : undefined}
+          className={`input ${error ? 'input-error' : ''}`}
         />
       )}
-      {hint && !error && <p className="text-xs text-slate-500">{hint}</p>}
-      {error && <p className="text-xs text-red-500">{error}</p>}
+      {hint && !error && <p id={`${name}-hint`} className="text-xs text-navy-400">{hint}</p>}
+      {error && <p id={`${name}-error`} className="text-xs text-red-500 font-medium" role="alert">{error}</p>}
     </div>
   )
 }
