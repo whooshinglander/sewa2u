@@ -44,6 +44,8 @@ export default function Footer() {
         </p>
         <p className="text-xs text-navy-300 text-center mt-1">
           <a href="https://sgtenancy.com" className="hover:text-brand-600 transition-colors" target="_blank" rel="noopener noreferrer">Singapore tenancy agreement</a> also available
+          {' · '}
+          <a href="https://picklesg.com" className="hover:text-brand-600 transition-colors" target="_blank" rel="noopener noreferrer">Pickleball Singapore</a> also available
         </p>
       </div>
     </footer>
