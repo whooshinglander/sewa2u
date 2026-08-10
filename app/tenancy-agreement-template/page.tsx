@@ -4,12 +4,12 @@ import Header from '@/components/ui/Header'
 import Footer from '@/components/ui/Footer'
 
 export const metadata: Metadata = {
-  title: 'Tenancy Agreement Template Malaysia — Download',
+  title: 'Malaysia Tenancy Agreement Template — Free PDF Download',
   description: 'Download a Malaysia tenancy agreement template. Covers residential, condo, room rental. General-compliant, editable Word/PDF format.',
   keywords: 'tenancy agreement template Malaysia download, Malaysia tenancy agreement template, rental agreement template Malaysia, free tenancy agreement template Malaysia, Tenancy agreement template, tenancy agreement Malaysia download, residential tenancy agreement template',
   alternates: { canonical: 'https://sewa2u.com/tenancy-agreement-template' },
   openGraph: {
-    title: 'Tenancy Agreement Template Malaysia — Download',
+    title: 'Malaysia Tenancy Agreement Template — Free PDF Download',
     description: 'Download a free Malaysia tenancy agreement template. Covers residential, condo, room rental. General-compliant, editable format.',
     url: 'https://sewa2u.com/tenancy-agreement-template',
     siteName: 'Sewa2u',

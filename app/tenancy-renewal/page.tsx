@@ -4,12 +4,12 @@ import Header from '@/components/ui/Header'
 import Footer from '@/components/ui/Footer'
 
 export const metadata: Metadata = {
-  title: 'Renew Tenancy Agreement Malaysia — residential & Condo | Sewa2u',
+  title: 'Renew Agreement Rumah Sewa Malaysia — PDF from RM30',
   description: 'Renew your tenancy agreement in Malaysia easily. Generate an updated residential or condo renewal contract in minutes. General-compliant.',
   keywords: 'tenancy renewal Malaysia, renew tenancy agreement Malaysia, residential rental renewal, extend tenancy agreement, tenancy renewal agreement Malaysia, tenancy renewal letter Malaysia, renew lease Malaysia',
   alternates: { canonical: 'https://sewa2u.com/tenancy-renewal' },
   openGraph: {
-    title: 'Renew Tenancy Agreement Malaysia — residential & Condo | Sewa2u',
+    title: 'Renew Agreement Rumah Sewa Malaysia — PDF from RM30',
     description: 'Renew your tenancy agreement in Malaysia easily. Generate an updated residential or condo renewal contract in minutes.',
     url: 'https://sewa2u.com/tenancy-renewal',
     siteName: 'Sewa2u',

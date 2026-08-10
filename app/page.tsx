@@ -1,5 +1,20 @@
 import HomeForm from '@/components/form/HomeForm'
 import HomepageSEO from '@/components/seo/HomepageSEO'
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Tenancy Agreement Sample Malaysia — Free Template PDF',
+  description: 'Generate a residential tenancy agreement for Malaysia. Preview before purchase, download PDF from RM30.',
+  alternates: { canonical: 'https://sewa2u.com' },
+  openGraph: {
+    title: 'Tenancy Agreement Sample Malaysia — Free Template PDF',
+    description: 'Generate a residential tenancy agreement for Malaysia. Preview before purchase, download PDF from RM30.',
+    url: 'https://sewa2u.com',
+    siteName: 'Sewa2u',
+    locale: 'en_MY',
+    type: 'website',
+  },
+}
 
 const HOMEPAGE_FAQS = [
   {

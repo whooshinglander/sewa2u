@@ -4,12 +4,12 @@ import Header from '@/components/ui/Header'
 import Footer from '@/components/ui/Footer'
 
 export const metadata: Metadata = {
-  title: 'Tenancy Agreement Malaysia — Preview, PDF RM30',
+  title: 'Tenancy Agreement Sample Malaysia — Extension & PDF',
   description: 'Generate a Malaysia tenancy agreement in 5 minutes — residential, condo, landed or room rental. General-compliant, preview before purchase, clean PDF from RM30. No sign-up.',
   keywords: 'tenancy agreement Malaysia pdf, tenancy agreement Malaysia, Malaysia tenancy agreement pdf, rental agreement Malaysia pdf, Malaysia rental agreement, Tenancy agreement, residential rental agreement, lease agreement Malaysia, tenancy contract Malaysia',
   alternates: { canonical: 'https://sewa2u.com/tenancy-agreement' },
   openGraph: {
-    title: 'Tenancy Agreement Malaysia — Preview, PDF RM30',
+    title: 'Tenancy Agreement Sample Malaysia — Extension & PDF',
     description: 'Generate a Malaysia tenancy agreement PDF online. residential, condo, landed, room rental — General-compliant. Preview before purchase, download from RM30.',
     url: 'https://sewa2u.com/tenancy-agreement',
     siteName: 'Sewa2u',
