@@ -95,7 +95,7 @@ export async function POST(request: Request) {
       .slice(0, 32)
 
     const session = await stripe.checkout.sessions.create({
-      payment_method_types: ['card', 'grabpay'],
+      payment_method_types: ['card'],
       line_items: [{
         price_data: {
           currency: 'myr',

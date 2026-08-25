@@ -4,12 +4,12 @@ import Header from '@/components/ui/Header'
 import Footer from '@/components/ui/Footer'
 
 export const metadata: Metadata = {
-  title: 'Room Rental Agreement Malaysia — Free Sample PDF',
+  title: 'Room Rental Agreement Malaysia — Instant PDF',
   description: 'Generate a room rental agreement for Malaysia residential propertys and private property. Preview before purchase, download from RM30.',
   keywords: 'room rental agreement Malaysia, room rental agreement generator Malaysia, residential room rental agreement, Malaysia room rental agreement template, room rental agreement Malaysia, room tenancy agreement Malaysia',
   alternates: { canonical: 'https://sewa2u.com/room-rental-agreement' },
   openGraph: {
-    title: 'Room Rental Agreement Malaysia — Free Sample PDF',
+    title: 'Room Rental Agreement Malaysia — Instant PDF',
     description: 'Generate a Malaysia room rental agreement for residential propertys and private property. Preview before purchase, download from RM30.',
     url: 'https://sewa2u.com/room-rental-agreement',
     siteName: 'Sewa2u',

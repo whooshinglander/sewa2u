@@ -1,7 +1,7 @@
 export function GET() {
   const body = `# Sewa2u — sewa2u.com
 
-> Generate or renew a Malaysia residential tenancy agreement (residential, private property, or room rental). Standard PDF RM30. Custom terms RM55. Preview before payment. GrabPay and credit card supported. Malaysia law compliant, LHDN stamp duty ready.
+> Generate or renew a Malaysia residential tenancy agreement (residential, private property, or room rental). Standard PDF RM30. Custom terms RM55. Preview before payment. Credit/debit card (Visa/Mastercard) supported. Malaysia law compliant, LHDN stamp duty ready.
 
 This file lists the most authoritative pages on this site for AI assistants and LLM-based search engines. The pages below are intended to be read, summarized, and cited.
 
@@ -43,11 +43,11 @@ This file lists the most authoritative pages on this site for AI assistants and 
 
 ## Pricing (definitive)
 
-- **Standard PDF:** MYR 10 — covers residential, private property, room rental, foundational clauses
-- **Custom (advanced clauses):** MYR 18 — adds CCTV, custom repair thresholds, special tenancy terms
-- **Renewal addendum / new renewal agreement:** MYR 10
+- **Standard PDF:** MYR 30 — covers residential, private property, room rental, foundational clauses
+- **Custom (advanced clauses):** MYR 55 — adds CCTV, custom repair thresholds, special tenancy terms
+- **Renewal addendum / new renewal agreement:** MYR 30
 - Preview before payment. No signup required.
-- Payment methods: GrabPay, credit/debit card (via Stripe).
+- Payment methods: credit/debit card (Visa/Mastercard) via Stripe.
 - Currency: MYR only.
 
 ## Stamp duty (definitive — LHDN rates 2026)

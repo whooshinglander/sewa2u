@@ -92,7 +92,7 @@ export default function TenancyAgreementMalaysiaPage() {
         <section className="max-w-3xl mx-auto px-4 py-14 text-center">
           <div className="inline-block bg-brand-50 text-brand-700 text-xs font-semibold px-3 py-1 rounded-full mb-4 tracking-wide uppercase">Malaysia Tenancy Agreement</div>
           <h1 className="text-3xl sm:text-4xl font-bold text-navy-800 mb-4">
-            Tenancy Agreement Malaysia PDF<br className="hidden sm:block" /> — Free Generator
+            Tenancy Agreement Malaysia PDF<br className="hidden sm:block" /> — Generator
           </h1>
           <p className="text-navy-500 text-base sm:text-lg max-w-2xl mx-auto mb-8">
             Create a legally structured tenancy agreement for any Malaysia residential property — residential propertys, private condos, or room rentals. Preview before purchase. Download a clean, print-ready <strong className="text-navy-700">PDF from RM30</strong>. No lawyer required.

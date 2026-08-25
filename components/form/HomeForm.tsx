@@ -190,7 +190,7 @@ export default function HomeForm() {
               <span className="text-navy-300" aria-hidden="true">·</span>
               <span className="font-medium text-navy-700">LHDN stamp duty ready</span>
               <span className="text-navy-300" aria-hidden="true">·</span>
-              <span className="font-medium text-navy-700">GrabPay / Card</span>
+              <span className="font-medium text-navy-700">Card (Visa / Mastercard)</span>
             </div>
           </section>
         )}

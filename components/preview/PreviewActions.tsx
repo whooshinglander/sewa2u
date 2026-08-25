@@ -65,7 +65,7 @@ export default function PreviewActions({ hasCustomClauses, onEdit }: Props) {
           <span className="text-navy-300">·</span>
           <span className="flex items-center gap-1.5">
             <span aria-hidden="true">🟢</span>
-            <span>GrabPay</span>
+            <span>Card</span>
           </span>
           <span className="text-navy-300 hidden sm:inline">·</span>
           <span className="hidden sm:flex items-center gap-1.5">
