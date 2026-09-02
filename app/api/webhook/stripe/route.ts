@@ -68,6 +68,14 @@ export async function POST(req: NextRequest) {
         ? session.payment_intent
         : session.payment_intent?.id ?? 'unknown'
 
+    // Idempotency guard: Stripe retries webhooks when the response is slow.
+    // If this session was already recorded, it's a retry — skip the duplicate
+    // notification (the DB insert below is also deduped via ignore-duplicates).
+    if (await customerExists(session.id)) {
+      console.log('Duplicate webhook (session already processed), skipping:', session.id)
+      return NextResponse.json({ received: true }, { status: 200 })
+    }
+
     console.log('Payment received:', {
       paymentIntentId,
       amount: `RM ${amount}`,
@@ -80,6 +88,32 @@ export async function POST(req: NextRequest) {
   }
 
   return NextResponse.json({ received: true }, { status: 200 })
+}
+
+async function customerExists(sessionId: string): Promise<boolean> {
+  const supabaseUrl = process.env.SUPABASE_URL
+  const serviceKey = process.env.SUPABASE_SERVICE_ROLE_KEY
+  if (!supabaseUrl || !serviceKey) {
+    // Without Supabase we can't dedup — assume not processed (send notification).
+    return false
+  }
+  try {
+    const res = await fetch(
+      `${supabaseUrl}/rest/v1/customers?stripe_session_id=eq.${encodeURIComponent(sessionId)}&select=id`,
+      {
+        headers: {
+          apikey: serviceKey,
+          Authorization: `Bearer ${serviceKey}`,
+        },
+      },
+    )
+    if (!res.ok) return false
+    const rows = await res.json()
+    return Array.isArray(rows) && rows.length > 0
+  } catch (err) {
+    console.error('customerExists error:', err)
+    return false
+  }
 }
 
 async function insertCustomer(session: Stripe.Checkout.Session, tier: string) {
