@@ -29,7 +29,7 @@ const FAQS = [
   },
   {
     q: 'Apa itu duti setem?',
-    a: "Duti setem (stamp duty) ialah cukai yang dikenakan oleh LHDN (Lembaga Hasil Dalam Negeri) ke atas perjanjian sewa. Kadar untuk tempoh 1 tahun atau kurang ialah RM1 bagi setiap RM250 sewa tahunan; untuk tempoh 1–3 tahun ialah 0.4% daripada purata sewa tahunan. Contoh: sewa RM1,000 sebulan untuk 1 tahun = RM12,000 setahun, jadi duti setem ialah RM48. Perjanjian perlu disetem dalam tempoh 30 hari selepas ditandatangani untuk mengelakkan penalti. In English: stamp duty is a tax payable to LHDN on the tenancy agreement.",
+    a: "Duti setem (stamp duty) ialah cukai yang dikenakan oleh LHDN (Lembaga Hasil Dalam Negeri) ke atas perjanjian sewa. Kadar untuk tempoh 1 tahun atau kurang ialah RM1 bagi setiap RM250 sewa tahunan; untuk tempoh 1–3 tahun ialah 0.4% daripada purata sewa tahunan. Contoh: sewa RM1,000 sebulan untuk 1 tahun = RM12,000 setahun, jadi duti setem ialah RM48. Perjanjian perlu disetem dalam tempoh 14 hari selepas ditandatangani (30 hari jika ditandatangani di luar negara) untuk mengelakkan penalti. In English: stamp duty is a tax payable to LHDN on the tenancy agreement.",
   },
   {
     q: 'Apakah klausa penting dalam perjanjian sewa?',
@@ -41,7 +41,7 @@ const FAQS = [
   },
   {
     q: 'Siapa yang menanggung duti setem perjanjian sewa?',
-    a: "Mengikut amalan standard di Malaysia, duti setem perjanjian sewa biasanya ditanggung oleh penyewa (tenant). Walau bagaimanapun, ini boleh dipersetujui sebaliknya dalam perjanjian. Duti setem perlu dibayar kepada LHDN dalam tempoh 30 hari selepas perjanjian ditandatangani. Perjanjian yang tidak disetem tidak boleh diterima sebagai keterangan di mahkamah Malaysia. In English: stamp duty is usually borne by the tenant, but this can be negotiated in the agreement.",
+    a: "Mengikut amalan standard di Malaysia, duti setem perjanjian sewa biasanya ditanggung oleh penyewa (tenant). Walau bagaimanapun, ini boleh dipersetujui sebaliknya dalam perjanjian. Duti setem perlu dibayar kepada LHDN dalam tempoh 14 hari selepas perjanjian ditandatangani (30 hari jika ditandatangani di luar negara). Perjanjian yang tidak disetem tidak boleh diterima sebagai keterangan di mahkamah Malaysia. In English: stamp duty is usually borne by the tenant, but this can be negotiated in the agreement.",
   },
   {
     q: 'Bagaimana cara mendapatkan perjanjian sewa?',
@@ -163,10 +163,10 @@ export default function TenancyAgreementInMalayPage() {
               <li>Tempoh 1–3 tahun: <strong className="text-navy-800">0.4%</strong> daripada purata sewa tahunan.</li>
             </ul>
             <p className="text-navy-600 text-sm leading-relaxed mb-4">
-              Contoh: sewa RM1,000 sebulan untuk 1 tahun = RM12,000 setahun. Duti setem = RM12,000 ÷ 250 = <strong className="text-navy-800">RM48</strong>. Perjanjian perlu disetem dalam tempoh 30 hari selepas ditandatangani untuk mengelakkan penalti. Duti setem biasanya ditanggung oleh penyewa.
+              Contoh: sewa RM1,000 sebulan untuk 1 tahun = RM12,000 setahun. Duti setem = RM12,000 ÷ 250 = <strong className="text-navy-800">RM48</strong>. Perjanjian perlu disetem dalam tempoh 14 hari selepas ditandatangani (30 hari jika ditandatangani di luar negara) untuk mengelakkan penalti. Duti setem biasanya ditanggung oleh penyewa.
             </p>
             <p className="text-navy-600 text-sm leading-relaxed">
-              Perjanjian yang tidak disetem tidak boleh diterima sebagai keterangan di mahkamah Malaysia. Lihat <Link href="/stamp-duty-tenancy-renewal" className="text-brand-700 hover:underline">kalkulator duti setem</Link> untuk contoh pengiraan penuh. <em>In English:</em> stamp duty is payable to LHDN, usually borne by the tenant, and must be paid within 30 days of signing.
+              Perjanjian yang tidak disetem tidak boleh diterima sebagai keterangan di mahkamah Malaysia. Lihat <Link href="/stamp-duty-tenancy-renewal" className="text-brand-700 hover:underline">kalkulator duti setem</Link> untuk contoh pengiraan penuh. <em>In English:</em> stamp duty is payable to LHDN, usually borne by the tenant, and must be paid within 14 days of signing — or 30 days if the agreement was signed outside Malaysia.
             </p>
           </div>
         </section>

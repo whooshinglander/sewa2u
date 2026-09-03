@@ -29,7 +29,7 @@ const FAQS = [
   },
   {
     q: 'Should I use NRIC, FIN, or passport number for the tenant?',
-    a: "Whichever ID document the tenant currently holds. Malaysiaan and PR tenants: NRIC. Employment Pass / S Pass / Work Permit / Student Pass holders: FIN (the number on their work pass card, not their passport). Tourists or short-stay foreigners (rare for renewals): passport number plus pass type and expiry. Use the same ID type they used in the original tenancy unless their status has changed (e.g., went from EP to PR). Don't mix — pick one consistent ID per party.",
+    a: "Whichever ID document the tenant currently holds. Malaysian and PR tenants: NRIC. Employment Pass / S Pass / Work Permit / Student Pass holders: FIN (the number on their work pass card, not their passport). Tourists or short-stay foreigners (rare for renewals): passport number plus pass type and expiry. Use the same ID type they used in the original tenancy unless their status has changed (e.g., went from EP to PR). Don't mix — pick one consistent ID per party.",
   },
   {
     q: 'Do I need witnesses to sign the renewal?',
@@ -117,7 +117,7 @@ export default function TenancyRenewalChecklistPage() {
             <div className="bg-white rounded-xl border border-slate-200 shadow-sm p-5">
               <p className="font-semibold text-navy-800 mb-2">1. Parties identification</p>
               <p className="text-navy-600 text-sm leading-relaxed">
-                Full legal names of landlord and tenant, plus ID numbers. Malaysiaan / PR uses NRIC, foreigner on a work or student pass uses FIN, short-stay foreigner uses passport number with pass type. Add residential address for both parties — needed for legal notice service if disputes arise.
+                Full legal names of landlord and tenant, plus ID numbers. Malaysian / PR uses NRIC, foreigner on a work or student pass uses FIN, short-stay foreigner uses passport number with pass type. Add residential address for both parties — needed for legal notice service if disputes arise.
               </p>
             </div>
             <div className="bg-white rounded-xl border border-slate-200 shadow-sm p-5">

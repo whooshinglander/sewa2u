@@ -4,13 +4,13 @@ import Header from '@/components/ui/Header'
 import Footer from '@/components/ui/Footer'
 
 export const metadata: Metadata = {
-  title: 'Foreign Tenant Renewal in Malaysia — Pass Expiry, ICA Updates, What to Sign | Sewa2u',
-  description: 'Renewing a tenancy for an EP, S Pass, WP, or DP holder in Malaysia. Pass expiry alignment, diplomatic clause, ICA address update, mid-term pass denial. Plain English.',
+  title: 'Foreign Tenant Renewal in Malaysia — Pass Expiry, Immigration Updates, What to Sign | Sewa2u',
+  description: 'Renewing a tenancy for an EP, S Pass, WP, or DP holder in Malaysia. Pass expiry alignment, diplomatic clause, JIM address records, mid-term pass denial. Plain English.',
   keywords: 'foreign tenant renewal Malaysia, expat tenancy renewal, ep holder rent renewal, work permit tenancy renewal, ica renewal tenant',
   alternates: { canonical: 'https://sewa2u.com/foreign-tenant-renewal' },
   openGraph: {
-    title: 'Foreign Tenant Renewal in Malaysia — Pass Expiry, ICA Updates, What to Sign',
-    description: 'Renewing for EP/S Pass/WP/DP tenants: pass alignment, diplomatic clause, ICA 28-day rule.',
+    title: 'Foreign Tenant Renewal in Malaysia — Pass Expiry, Immigration Updates, What to Sign',
+    description: 'Renewing for EP/S Pass/WP/DP tenants: pass alignment, diplomatic clause, JIM address records.',
     url: 'https://sewa2u.com/foreign-tenant-renewal',
     siteName: 'Sewa2u',
     locale: 'en_MY',
@@ -21,15 +21,15 @@ export const metadata: Metadata = {
 const FAQS = [
   {
     q: "Should the tenancy term match the tenant's pass expiry date?",
-    a: "Best practice is to keep the tenancy end date on or before the pass expiry. If the pass runs out 8 months into a 12-month renewal, you have a built-in problem if MOM doesn't approve the renewal. Either align the tenancy to the pass (shorter term, then re-renew once the new pass is issued), or sign a 12-month tenancy with a clear early-termination clause tied to pass non-renewal. Don't just sign and hope.",
+    a: "Best practice is to keep the tenancy end date on or before the pass expiry. If the pass runs out 8 months into a 12-month renewal, you have a built-in problem if IMM doesn't approve the renewal. Either align the tenancy to the pass (shorter term, then re-renew once the new pass is issued), or sign a 12-month tenancy with a clear early-termination clause tied to pass non-renewal. Don't just sign and hope.",
   },
   {
     q: "What if the tenant's pass isn't renewed mid-term?",
     a: "Without a clause, the tenant is still legally bound to pay rent through the end of the term even if they have to leave Malaysia. Most foreign-tenant tenancies include a diplomatic clause covering exactly this — usually allowing the tenant to terminate after 12 months of occupancy with 2 months' notice if their pass is cancelled, employment ends, or they're transferred out. If the tenant is on a fresh renewal and their pass gets denied at the 4-month mark, the diplomatic clause may not have kicked in yet, so it's worth negotiating the wording before signing.",
   },
   {
-    q: 'Does the tenant need to update ICA when they renew at the same address?',
-    a: "If the address on their pass card already matches the rental, no — staying put doesn't trigger a fresh ICA update. The 28-day rule applies when a foreigner changes residential address. So if they're renewing at the same flat, ICA is already current. If they move to a different unit (even within the same condo or block), they have 28 days from the move date to update ICA via the e-Service or in person. Failure to update is a breach under the Immigration Act.",
+    q: 'Does the tenant need to update Immigration (JIM) when they renew at the same address?',
+    a: "If the address on their pass record already matches the rental, no — staying put doesn't trigger anything. The obligation is to keep the registered address current with the Immigration Department (Jabatan Imigresen Malaysia, JIM). So if they're renewing at the same flat, their record is already correct. If they move to a different unit (even within the same condo or block), they should update JIM when they move — via the online pass systems or at an Immigration office. A stale address on the pass record causes trouble at renewal and application time.",
   },
   {
     q: 'How does this work for Dependent Pass holders?',
@@ -48,8 +48,8 @@ const FAQS = [
     a: "Yes. As a non-resident landlord, you're taxed on rental income at a flat 22% (rising to 24% from YA 2024) on net rental, with no personal reliefs. The tenant has no withholding obligation for residential rent paid to a non-resident landlord — that's withholding for commercial property rentals, not residential. You report the rental income through your LHDN filing. If you have a property agent collecting rent on your behalf, they may have agency-specific reporting practices.",
   },
   {
-    q: "Can the tenant sign a new tenancy before MOM has approved their pass renewal?",
-    a: "Legally yes — the tenancy is a contract between landlord and tenant, not conditional on MOM approval. But it's risky for both sides. If MOM denies the renewal after they've signed, the tenant is on the hook for rent unless there's a clause covering it. The cleaner approach is to sign with a condition precedent: tenancy is binding subject to pass renewal approval within X weeks. Or sign a Letter of Intent with a small good-faith deposit that's refundable if the pass is denied, and only convert to a full tenancy once approval comes through.",
+    q: "Can the tenant sign a new tenancy before IMM has approved their pass renewal?",
+    a: "Legally yes — the tenancy is a contract between landlord and tenant, not conditional on IMM approval. But it's risky for both sides. If IMM denies the renewal after they've signed, the tenant is on the hook for rent unless there's a clause covering it. The cleaner approach is to sign with a condition precedent: tenancy is binding subject to pass renewal approval within X weeks. Or sign a Letter of Intent with a small good-faith deposit that's refundable if the pass is denied, and only convert to a full tenancy once approval comes through.",
   },
 ]
 
@@ -66,8 +66,8 @@ const faqSchema = {
 const articleSchema = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  headline: 'Foreign Tenant Renewal in Malaysia — Pass Expiry, ICA Updates, What to Sign',
-  description: 'Renewing a tenancy for foreign tenants in Malaysia: pass expiry alignment, diplomatic clause, ICA 28-day rule, mid-term pass denial, DP/STVP/LTVP holders.',
+  headline: 'Foreign Tenant Renewal in Malaysia — Pass Expiry, Immigration Updates, What to Sign',
+  description: 'Renewing a tenancy for foreign tenants in Malaysia: pass expiry alignment, diplomatic clause, JIM address records, mid-term pass denial, DP/STVP/LTVP holders.',
   url: 'https://sewa2u.com/foreign-tenant-renewal',
   publisher: { '@type': 'Organization', name: 'Sewa2u', url: 'https://sewa2u.com' },
   datePublished: '2026-05-04',
@@ -101,7 +101,7 @@ export default function ForeignTenantRenewalPage() {
             Renewing a Tenancy for a Foreign Tenant in Malaysia
           </h1>
           <p className="text-navy-600 text-base sm:text-lg leading-relaxed mb-3">
-            Renewing for an Employment Pass, S Pass, Work Permit, or Dependent's Pass holder is mostly the same as for a Malaysiaan tenant. The differences are pass expiry alignment, the diplomatic clause, and the ICA 28-day address-update rule. Get those three right and the rest is just paperwork.
+            Renewing for an Employment Pass, S Pass, Work Permit, or Dependent's Pass holder is mostly the same as for a Malaysian tenant. The differences are pass expiry alignment, the diplomatic clause, and keeping the address on the Immigration (JIM) record current. Get those three right and the rest is just paperwork.
           </p>
           <p className="text-navy-500 text-sm">
             For the general renewal flow, see the <Link href="/tenancy-renewal" className="text-brand-700 hover:underline">renewal guide</Link>. For the clause itself, see the <Link href="/diplomatic-clause-tenancy-renewal" className="text-brand-700 hover:underline">diplomatic clause page</Link>.
@@ -117,7 +117,7 @@ export default function ForeignTenantRenewalPage() {
             <div className="bg-white rounded-xl border border-slate-200 shadow-sm p-5">
               <p className="font-semibold text-navy-800 mb-2">1. Get a copy of the current pass</p>
               <p className="text-navy-600 text-sm leading-relaxed">
-                Ask the tenant for a photo of their pass card (front and back) or the printout from MOM's online portal. Note the pass type (EP, S Pass, WP, DP) and the exact expiry date. Don't take their word for it — pass cards get lost, and renewal applications get denied more often than people admit.
+                Ask the tenant for a photo of their pass card (front and back) or the printout from IMM's online portal. Note the pass type (EP, S Pass, WP, DP) and the exact expiry date. Don't take their word for it — pass cards get lost, and renewal applications get denied more often than people admit.
               </p>
             </div>
             <div className="bg-white rounded-xl border border-slate-200 shadow-sm p-5">
@@ -152,27 +152,27 @@ export default function ForeignTenantRenewalPage() {
               <li><strong className="text-navy-800">S Pass holders.</strong> Often included. The S Pass renewal rate is high but not 100%, and tenants on tighter budgets need the option.</li>
               <li><strong className="text-navy-800">WP holders.</strong> Less common, partly because WP tenancies are often dorms or company-arranged housing. If renting on the open market, a clause is reasonable.</li>
               <li><strong className="text-navy-800">DP holders.</strong> Tied to the main pass holder, so the diplomatic trigger is usually framed around the EP/S Pass holder's status, not the DP itself.</li>
-              <li><strong className="text-navy-800">PR holders.</strong> Don't typically need a diplomatic clause — they're not at risk of pass non-renewal in the same way. Treat the renewal like a Malaysiaan tenant.</li>
+              <li><strong className="text-navy-800">PR holders.</strong> Don't typically need a diplomatic clause — they're not at risk of pass non-renewal in the same way. Treat the renewal like a Malaysian tenant.</li>
             </ul>
           </div>
         </section>
 
         <section className="max-w-3xl mx-auto px-4 pb-10">
-          <h2 className="text-2xl font-bold text-navy-800 mb-4">ICA address update — both sides have an obligation</h2>
+          <h2 className="text-2xl font-bold text-navy-800 mb-4">Address records with Immigration (JIM) — the tenant&apos;s side</h2>
           <p className="text-navy-600 text-sm leading-relaxed mb-4">
-            Under the Immigration Act and the National Registration Act, foreigners holding a long-term pass must keep their registered residential address current with ICA. The window is 28 days from the move-in date.
+            Long-term pass holders are expected to keep their residential address current with the Immigration Department of Malaysia (Jabatan Imigresen Malaysia, or JIM) — the address is part of the pass record, and updates go through the pass systems (e.g. MyXPATS/ePPAX) or the nearest Immigration office. Unlike some neighbouring countries, Malaysia does not publish a strict statutory day-count for the address change itself — but pass renewals and new applications check the records, so stale addresses surface at the worst moment.
           </p>
           <p className="text-navy-600 text-sm leading-relaxed mb-4">
-            For a renewal where the tenant is staying at the same unit, no fresh ICA update is needed. The address on file already matches. If the renewal involves a unit change (different flat, even in the same building), the tenant must update ICA within 28 days of moving in.
+            For a renewal where the tenant is staying at the same unit, nothing needs filing — the address on file already matches. If the renewal involves a unit change (different flat, even in the same building), the tenant should update their address with JIM when they move.
           </p>
           <p className="text-navy-600 text-sm leading-relaxed mb-4">
             Practical points:
           </p>
           <ul className="space-y-2 text-navy-600 text-sm mb-4 pl-5 list-disc">
-            <li>The tenant needs to update their residential address with the Immigration Department of Malaysia (Jabatan Imigresen) — this can be done via the ePPAX system or at the nearest Immigration office. A stamped tenancy agreement is the cleanest proof of address.</li>
+            <li>The tenant needs to update their residential address with the Immigration Department of Malaysia (Jabatan Imigresen) — this is done via the employer's ESD/MyXPATS portal for expatriate passes, or at the nearest Immigration office. A stamped tenancy agreement is the cleanest proof of address.</li>
             <li>The tenant needs proof of address — a stamped tenancy agreement is the cleanest evidence, which is why getting LHDN stamping done early matters.</li>
-            <li>Failure to update is a breach under the Immigration Act and can affect future pass renewals or PR applications.</li>
-            <li>As landlord you don't file the Immigration Department update for them, but pointing it out (especially for first-time tenants in Malaysia) avoids problems later.</li>
+            <li>A stale address on the pass record complicates future pass renewals and any long-stay applications — better corrected at move-in than discovered at renewal time.</li>
+            <li>As landlord you don't file the JIM update for them, but pointing it out (especially for first-time tenants in Malaysia) avoids problems later.</li>
           </ul>
         </section>
 
@@ -184,11 +184,11 @@ export default function ForeignTenantRenewalPage() {
           <div className="bg-white rounded-2xl border border-slate-200 shadow-sm p-6 mb-4">
             <p className="font-semibold text-navy-800 mb-3">Clause checklist:</p>
             <ul className="space-y-3 text-navy-600 text-sm">
-              <li><strong className="text-navy-800">Pass non-renewal trigger.</strong> Define what counts: MOM denial, employer withdrawal, pass cancellation. Be specific so there's no argument about whether the trigger fired.</li>
-              <li><strong className="text-navy-800">Notice period.</strong> Standard is 2 months' written notice once the trigger fires. Some agreements require the tenant to provide a copy of the MOM letter.</li>
+              <li><strong className="text-navy-800">Pass non-renewal trigger.</strong> Define what counts: IMM denial, employer withdrawal, pass cancellation. Be specific so there's no argument about whether the trigger fired.</li>
+              <li><strong className="text-navy-800">Notice period.</strong> Standard is 2 months' written notice once the trigger fires. Some agreements require the tenant to provide a copy of the IMM letter.</li>
               <li><strong className="text-navy-800">Effective date.</strong> Usually the later of (a) end of notice period, or (b) actual move-out. Avoids the tenant being forced out before they can pack.</li>
               <li><strong className="text-navy-800">Deposit treatment.</strong> Prorated return after deduction for any unpaid rent, utilities, or damage. Be explicit that deposit isn't forfeit just because the term wasn't completed.</li>
-              <li><strong className="text-navy-800">Documentation requirement.</strong> Tenant produces evidence of pass status — MOM letter, employer letter, or pass card showing the new expiry.</li>
+              <li><strong className="text-navy-800">Documentation requirement.</strong> Tenant produces evidence of pass status — IMM letter, employer letter, or pass card showing the new expiry.</li>
             </ul>
           </div>
           <p className="text-navy-600 text-sm leading-relaxed">

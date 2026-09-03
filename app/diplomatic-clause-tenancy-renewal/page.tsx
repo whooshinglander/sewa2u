@@ -25,15 +25,15 @@ const FAQS = [
   },
   {
     q: 'Who qualifies for a diplomatic clause?',
-    a: "Foreign tenants whose right to live in Malaysia depends on a work pass — Employment Pass (EP), S Pass, or Work Permit holders, plus their dependents on a DP. The logic of the clause is that they can be forced to leave Malaysia through no fault of their own (retrenchment, transfer, pass not renewed by MOM). Malaysiaans, PRs, and Long-Term Visit Pass holders generally don't qualify because they don't face that risk.",
+    a: "Foreign tenants whose right to live in Malaysia depends on a work pass — Employment Pass (EP), S Pass, or Work Permit holders, plus their dependents on a DP. The logic of the clause is that they can be forced to leave Malaysia through no fault of their own (retrenchment, transfer, pass not renewed by IMM). Malaysians, PRs, and Long-Term Visit Pass holders generally don't qualify because they don't face that risk.",
   },
   {
     q: 'Why is it always "12 months minimum + 2 months notice"?',
     a: "It's market convention, not law. Twelve months protects the landlord's vacancy and re-letting costs for the first year, which is when most agent commissions and fit-out costs get amortised. Two months of notice gives the landlord enough runway to find a replacement tenant. Some leases extend it to 14+2 or 12+3 — both are negotiable, especially if the rent is below market or the unit is in a slower-letting area.",
   },
   {
-    q: 'Can a Malaysiaan tenant ask for a diplomatic clause?',
-    a: "They can ask, but the basis is weak. The whole point of the clause is to protect against forced departure tied to a work pass. A Malaysiaan isn't going to lose their right to be in the country. If a Malaysiaan tenant wants similar flexibility, what they're really asking for is an early termination clause — different name, different negotiation, usually requires the tenant to pay a penalty (1-2 months rent) or cover the agent's re-letting fee. Calling it a diplomatic clause when the tenant is local is just confusing.",
+    q: 'Can a Malaysian tenant ask for a diplomatic clause?',
+    a: "They can ask, but the basis is weak. The whole point of the clause is to protect against forced departure tied to a work pass. A Malaysian isn't going to lose their right to be in the country. If a Malaysian tenant wants similar flexibility, what they're really asking for is an early termination clause — different name, different negotiation, usually requires the tenant to pay a penalty (1-2 months rent) or cover the agent's re-letting fee. Calling it a diplomatic clause when the tenant is local is just confusing.",
   },
   {
     q: 'Is a diplomatic clause required by law?',
@@ -41,7 +41,7 @@ const FAQS = [
   },
   {
     q: 'What proof does a tenant need to invoke the diplomatic clause?',
-    a: "Usually a termination letter from the employer, a transfer letter, or a copy of the cancelled work pass / IPA rejection. Some leases also accept a notice of non-renewal from MOM. The clause should specify what counts as acceptable proof, and the tenant has to give written notice with that documentation attached. Without proper proof, the landlord can refuse to release them and treat it as a normal early termination (forfeit deposit, claim rent for unfilled period).",
+    a: "Usually a termination letter from the employer, a transfer letter, or a copy of the cancelled work pass / IPA rejection. Some leases also accept a notice of non-renewal from IMM. The clause should specify what counts as acceptable proof, and the tenant has to give written notice with that documentation attached. Without proper proof, the landlord can refuse to release them and treat it as a normal early termination (forfeit deposit, claim rent for unfilled period).",
   },
   {
     q: 'Can the landlord charge higher rent in exchange for keeping the diplomatic clause on renewal?',
@@ -115,7 +115,7 @@ export default function DiplomaticClauseRenewalPage() {
           </p>
           <div className="bg-white rounded-xl border border-slate-200 shadow-sm p-5 mb-4">
             <p className="text-navy-700 text-sm leading-relaxed italic">
-              "Provided that the Tenant has occupied the Premises for a continuous period of not less than twelve (12) months from the commencement date, and the Tenant or his/her spouse is required by their employer to leave Malaysia, or the Tenant's Employment Pass / S Pass / Work Permit is not renewed or is cancelled by the Ministry of Manpower for reasons not attributable to the Tenant, the Tenant may terminate this tenancy by giving the Landlord not less than two (2) months written notice in advance, supported by documentary proof. The security deposit shall be refunded in full less any deductions for damage or unpaid rent."
+              "Provided that the Tenant has occupied the Premises for a continuous period of not less than twelve (12) months from the commencement date, and the Tenant or his/her spouse is required by their employer to leave Malaysia, or the Tenant's Employment Pass / S Pass / Work Permit is not renewed or is cancelled by the Immigration Department (IMM) for reasons not attributable to the Tenant, the Tenant may terminate this tenancy by giving the Landlord not less than two (2) months written notice in advance, supported by documentary proof. The security deposit shall be refunded in full less any deductions for damage or unpaid rent."
             </p>
           </div>
           <p className="text-navy-600 text-sm leading-relaxed">
@@ -130,11 +130,11 @@ export default function DiplomaticClauseRenewalPage() {
           </p>
           <div className="bg-white rounded-2xl border border-slate-200 shadow-sm p-6">
             <ul className="space-y-3 text-navy-600 text-sm">
-              <li><strong className="text-navy-800">Employment Pass (EP) holders.</strong> The most common case. EP renewal is at MOM's discretion, and a non-renewal would force the holder to leave within 30 days.</li>
+              <li><strong className="text-navy-800">Employment Pass (EP) holders.</strong> The most common case. EP renewal is at IMM's discretion, and a non-renewal would force the holder to leave within 30 days.</li>
               <li><strong className="text-navy-800">S Pass holders.</strong> Same logic as EP. Pass tied to a specific employer; cancellation means the right to stay ends.</li>
               <li><strong className="text-navy-800">Work Permit (WP) holders.</strong> Less common as residential tenants, but the clause applies the same way if the WP is cancelled.</li>
               <li><strong className="text-navy-800">Dependent Pass (DP) holders.</strong> If the spouse on the main pass loses theirs, the DP gets cancelled too. A trailing spouse can invoke the clause based on the main holder's situation.</li>
-              <li><strong className="text-navy-800">Malaysiaans and PRs.</strong> Don't qualify. They can't be forced out of Malaysia, so the underlying rationale doesn't apply. If they want flexibility, that's an early termination clause, not a diplomatic clause.</li>
+              <li><strong className="text-navy-800">Malaysians and PRs.</strong> Don't qualify. They can't be forced out of Malaysia, so the underlying rationale doesn't apply. If they want flexibility, that's an early termination clause, not a diplomatic clause.</li>
             </ul>
           </div>
         </section>

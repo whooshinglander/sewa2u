@@ -32,8 +32,8 @@ const FAQS = [
     a: "Take your vacancy cost plus commission, divide by 12. For a RM3,000 residential with 3 weeks vacancy (RM2,250) plus half-month commission (RM1,500), that's RM3,750 total, or RM312/month. So the new tenant has to pay RM312 more per month just to match what you'd earn renewing the existing tenant at the same rent. That's a 10.4% rent increase, before accounting for risk. If the market rent has moved up by less than that, renewal wins on math alone.",
   },
   {
-    q: "MOM and ICA implications when changing tenants",
-    a: "If your current tenant is a foreign worker, you have no MOM or ICA filing duty as the landlord. The tenant's employer handles work pass administration. What does change: you should refresh the new tenant's pass details (EP/S Pass/WP number, expiry) in the new tenancy, and re-check the FIN expiry against the lease end date. If you rent to a non-pass-holder foreigner illegally, MOM penalties fall on you. Verify pass validity at every change of tenant, not just at the start of the original lease.",
+    q: "IMM (Immigration) implications when changing tenants",
+    a: "If your current tenant is a foreign worker, you have no IMM filing duty as the landlord. The tenant's employer handles work pass administration. What does change: you should refresh the new tenant's pass details (EP/S Pass/WP number, expiry) in the new tenancy, and re-check the FIN expiry against the lease end date. If you rent to a non-pass-holder foreigner illegally, IMM penalties fall on you. Verify pass validity at every change of tenant, not just at the start of the original lease.",
   },
   {
     q: "Deposit dispute risk: is a new tenant riskier?",
