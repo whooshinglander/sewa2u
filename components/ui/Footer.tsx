@@ -42,9 +42,11 @@ export default function Footer() {
         <p className="text-xs text-navy-300 text-center">
           © {new Date().getFullYear()} Sewa2u · Built for Malaysia landlords and tenants
         </p>
-        <p className="text-xs text-navy-300 text-center mt-1">
-          <a href="https://sgtenancy.com" className="hover:text-brand-600 transition-colors" target="_blank" rel="noopener noreferrer">Singapore tenancy agreement</a> also available
-        </p>
+        <div className="flex flex-wrap justify-center gap-x-5 gap-y-2 mb-6">
+          <a href="https://sgtenancy.com" className="text-sm text-navy-400 hover:text-brand-600 transition-colors">Singapore → SG Tenancy</a>
+          <a href="https://sanyathai.com" className="text-sm text-navy-400 hover:text-brand-600 transition-colors">Thailand → SanyaThai</a>
+          <a href="https://phlease.com" className="text-sm text-navy-400 hover:text-brand-600 transition-colors">Philippines → PhLease</a>
+        </div>
       </div>
     </footer>
   )
