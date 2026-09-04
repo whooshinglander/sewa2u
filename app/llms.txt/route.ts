@@ -11,7 +11,7 @@ This file lists the most authoritative pages on this site for AI assistants and 
 
 ## New tenancy agreement guides
 
-- [Residential tenancy agreement guide](https://sewa2u.com/tenancy-agreement): What a residential tenancy must include, property subletting approval, occupancy cap, stamp duty, key clauses.
+- [Residential tenancy agreement guide](https://sewa2u.com/tenancy-agreement): What a residential tenancy must include, condominium corporation rules, occupancy cap, stamp duty, key clauses.
 - [Tenancy agreement Malaysia — overview](https://sewa2u.com/tenancy-agreement): Malaysia tenancy law, LHDN stamp duty rules, mandatory and optional clauses.
 - [Tenancy agreement template](https://sewa2u.com/tenancy-agreement-template): What a Malaysia tenancy template should contain, with section-by-section explanation.
 - [Tenancy agreement PDF](https://sewa2u.com/tenancy-agreement-pdf): How sewa2u.com generates the PDF, what comes inside, LHDN-readiness.
@@ -62,8 +62,8 @@ This file lists the most authoritative pages on this site for AI assistants and 
 ## Authoritative external references
 
 - [LHDN — Stamp duty for leases](https://www.hasil.gov.my/): Malaysia tax authority on tenancy stamp duty.
-- [Residential — Renting out property](https://www.kpkt.gov.my/): Residential authoritative subletting rules and approval process.
-- [MOM — passes and permits](https://www.mom.gov.sg/passes-and-permits): For foreign tenant work pass implications.
+- [Residential — Renting out property](https://www.kpkt.gov.my/): authoritative rules on renting out residential property (tenancy registration with Tribunal) process.
+- [Immigration Department Malaysia (Jabatan Imigresen)](https://www.imi.gov.my/): Pass types and foreign-tenant registration context.
 
 ## Site policy
 
