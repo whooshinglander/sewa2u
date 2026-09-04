@@ -31,6 +31,7 @@ export default function Footer() {
         </div>
         <div className="flex flex-wrap justify-center gap-x-5 gap-y-2 mb-6">
           <Link href="/faq" className="text-sm text-navy-400 hover:text-brand-600 transition-colors font-medium">FAQ</Link>
+          <Link href="/blog" className="text-sm text-navy-500 hover:text-brand-700 transition-colors font-medium">Guides</Link>
           <Link href="/about" className="text-sm text-navy-400 hover:text-brand-600 transition-colors font-medium">About</Link>
           <Link href="/privacy" className="text-sm text-navy-400 hover:text-brand-600 transition-colors font-medium">Privacy</Link>
           <Link href="/terms" className="text-sm text-navy-400 hover:text-brand-600 transition-colors font-medium">Terms</Link>
