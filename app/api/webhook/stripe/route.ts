@@ -60,6 +60,14 @@ export async function POST(req: NextRequest) {
 
   if (event.type === 'checkout.session.completed') {
     const session = event.data.object as Stripe.Checkout.Session
+
+    // Site-ownership guard: all sites share ONE Stripe account + webhook secret,
+    // so every endpoint receives every payment. Only handle sessions in OUR
+    // currency (this site's checkout currency) — others belong to sibling sites.
+    if (session.currency !== 'myr') {
+      return NextResponse.json({ received: true, ignored: 'not-our-site' }, { status: 200 })
+    }
+
     const tier = session.metadata?.tier ?? 'unknown'
     const amount = ((session.amount_total ?? 0) / 100).toFixed(2)
     const email = session.customer_details?.email ?? session.customer_email ?? 'unknown'
