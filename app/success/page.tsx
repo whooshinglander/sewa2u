@@ -106,6 +106,11 @@ function SuccessContent() {
               items: [{ item_id: t, item_name: `sewa2u ${t} agreement`, price: value, quantity: 1 }],
             })
           }
+          // Microsoft UET purchase event
+          const uetq = (window as unknown as { uetq?: (...args: unknown[]) => void }).uetq
+          if (typeof window !== 'undefined' && typeof uetq === 'function') {
+            uetq('push', { ec: 'ecommerce', ea: 'purchase', el: 'sewa2u', ev: data.amount_total ? data.amount_total / 100 : 30, gv: data.amount_total ? data.amount_total / 100 : 30, gc: (data.currency || 'usd').toUpperCase(), to: sessionId })
+          }
         } else {
           setError('Payment not confirmed. If you were charged, please contact us.')
           setStatus('error')

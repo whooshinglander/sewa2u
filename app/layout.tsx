@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from 'next'
 import { DM_Sans, Plus_Jakarta_Sans } from 'next/font/google'
 import './globals.css'
+import Uet from '@/components/ui/Uet'
 import Script from 'next/script'
 import { Analytics } from '@vercel/analytics/react'
 
@@ -135,6 +136,7 @@ export default function RootLayout({
             dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
           />
         ))}
+        <Uet />
       </head>
       <body className={`${dmSans.className} antialiased`}>
         {children}
