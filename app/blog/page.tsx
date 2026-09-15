@@ -26,6 +26,12 @@ const groups = [
         "tag": "Agreements"
       },
       {
+        "href": "/tenancy-agreement-bahasa",
+        "title": "Contoh & Maksud Klausa Agreement BM",
+        "desc": "Setiap klausa utama dijelaskan dalam Bahasa Melayu — dwibahasa EN/BM.",
+        "tag": "Agreements"
+      },
+      {
         "href": "/tenancy-agreement-template",
         "title": "Tenancy Agreement Template (Whole Unit vs Room)",
         "desc": "Which clauses change between whole-unit and room rentals.",
