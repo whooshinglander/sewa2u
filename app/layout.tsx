@@ -19,7 +19,7 @@ const plusJakartaSans = Plus_Jakarta_Sans({
   weight: ['500', '600', '700', '800'],
 })
 
-const GA_ID = 'G-LCWJPFYG1X'
+const GA_ID = 'G-1PLZ2X6F26'
 
 export const viewport: Viewport = {
   width: 'device-width',
