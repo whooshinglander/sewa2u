@@ -27,6 +27,7 @@ async function sendTelegramNotification(
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
         chat_id: TELEGRAM_CHAT_ID,
+        message_thread_id: Number(process.env.TELEGRAM_THREAD_ID || "18505"),
         text,
         parse_mode: 'Markdown',
       }),
